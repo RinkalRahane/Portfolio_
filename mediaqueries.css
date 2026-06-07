@@ -1,0 +1,190 @@
+/* =========================
+   LARGE TABLETS
+========================= */
+
+@media screen and (max-width: 1200px){
+
+    #home{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-content{
+        max-width:90%;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero-image img{
+        width:280px;
+        height:280px;
+    }
+
+    .stats{
+        flex-wrap:wrap;
+    }
+
+    .about-container{
+        flex-wrap:wrap;
+    }
+
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media screen and (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:1rem;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content h2{
+        font-size:1.2rem;
+    }
+
+    .section-title{
+        font-size:2.2rem;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .social-icons{
+        text-align:center;
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat-card{
+        width:100%;
+        max-width:250px;
+    }
+
+    .glass-card{
+        width:100%;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 480px){
+
+    nav{
+        padding:10px;
+    }
+
+    .nav-links{
+        gap:0.8rem;
+        font-size:0.9rem;
+    }
+
+    #home{
+        padding:30px 20px;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .hero-content h2{
+        font-size:1rem;
+    }
+
+    .hero-content p{
+        font-size:0.95rem;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .stat-card h2{
+        font-size:2rem;
+    }
+
+    .contact-card{
+        padding:20px;
+    }
+
+    .contact-card p{
+        font-size:0.9rem;
+        word-break:break-word;
+    }
+
+    footer{
+        font-size:0.8rem;
+    }
+
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media screen and (max-width: 350px){
+
+    .hero-content h1{
+        font-size:1.7rem;
+    }
+
+    .hero-image img{
+        width:180px;
+        height:180px;
+    }
+
+    .logo{
+        font-size:1.2rem;
+    }
+
+    .nav-links{
+        font-size:0.8rem;
+    }
+
+}

@@ -1,0 +1,387 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+    --bg:#f5f7fa;
+    --text:#222;
+    --card:rgba(255,255,255,0.25);
+    --primary:#05070b;
+    --secondary:#9333ea;
+}
+
+body.dark-mode{
+    --bg:#0f172a;
+    --text:#ffffff;
+    --card:rgba(255,255,255,0.08);
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:0.4s;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.15);
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+    background:linear-gradient(45deg,#151515,#17101e);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.nav-links{
+    display:flex;
+    gap:2rem;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+#mode-toggle{
+    border:none;
+    background:none;
+    font-size:1.3rem;
+    cursor:pointer;
+}
+
+/* HERO */
+
+#home{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    padding:50px 10%;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+.hero-content{
+    max-width:600px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    background:linear-gradient(45deg,#090a0a,#a7a4ab);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    
+}
+
+.hero-content h2{
+    color:var(--primary);
+    margin:10px 0;
+    align-items: center;
+}
+
+.hero-content p{
+    line-height:1.8;
+    margin:20px 0;
+    align-items: center;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+    align-items: center;
+}
+
+
+.btn{
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    align-items: center;
+}
+
+.primary{
+    background:linear-gradient(45deg,#2563eb,#9333ea);
+    color:white;
+    align-items: center;
+}
+
+.secondary{
+    border:2px solid var(--primary);
+    color:var(--primary);
+    align-items: center;
+}
+
+.primary:hover,
+.secondary:hover{
+    transform:translateY(-3px);
+    align-items: center;
+}
+
+.social-icons{
+    margin-top:25px;
+}
+
+.social-icons a{
+    font-size:30px;
+    color:var(--text);
+    margin-right:20px;
+}
+
+.social-icons a:hover{
+    color:var(--primary);
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+/* STATS */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+}
+
+.stat-card{
+    width:220px;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    background:var(--card);
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
+
+.stat-card h2{
+    color:var(--primary);
+    font-size:2.5rem;
+}
+
+/* ABOUT */
+
+#about{
+    padding:100px 10%;
+}
+
+.about-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.glass-card{
+    width:350px;
+    padding:30px;
+    border-radius:20px;
+    background:var(--card);
+    backdrop-filter:blur(15px);
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
+
+.glass-card:hover{
+    transform:translateY(-10px);
+}
+
+.about-text{
+    text-align:center;
+    max-width:900px;
+    margin:40px auto;
+    line-height:1.8;
+}
+
+/* SKILLS */
+
+#skills{
+    padding:100px 10%;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    padding:25px;
+    border-radius:20px;
+    background:var(--card);
+    backdrop-filter:blur(15px);
+}
+
+.progress{
+    height:10px;
+    background:#ddd;
+    border-radius:10px;
+    overflow:hidden;
+    margin-top:15px;
+}
+
+.progress span{
+    display:block;
+    height:100%;
+    background:linear-gradient(45deg,#070707,#0a0a0a);
+}
+
+/* PROJECTS */
+
+#projects{
+    padding:100px 10%;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    border-radius:20px;
+    overflow:hidden;
+    background:var(--card);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:20px;
+}
+
+.project-card p{
+    padding:0 20px;
+}
+
+.project-card a{
+    display:inline-block;
+    margin:20px;
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+}
+
+/* CONTACT */
+
+#contact{
+    padding:100px 10%;
+}
+
+.contact-card{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    padding:40px;
+    border-radius:20px;
+    background:var(--card);
+    backdrop-filter:blur(15px);
+}
+
+.contact-card p{
+    margin:20px 0;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    padding:25px;
+    text-align:center;
+    margin-top:50px;
+}
+
+/* TYPING CURSOR */
+
+.typing::after{
+    content:"|";
+    animation:blink .7s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+/* REVEAL ANIMATION */
+
+.glass-card,
+.skill-card,
+.project-card,
+.stat-card{
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.8s;
+}
+
+.glass-card.active,
+.skill-card.active,
+.project-card.active,
+.stat-card.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ACTIVE NAV LINK */
+
+.nav-links a.active{
+    color:#03070e;
+    font-weight:700;
+}

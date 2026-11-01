@@ -1,312 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinkal Rahane | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Metadata -->
+    <title>Rinkal Rahane | B.Tech CSE (AI & ML) Student & Developer</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Rinkal Rahane, a Computer Science & Engineering student specializing in AI & Machine Learning at Sanjivani University, Kopargaon. Experienced in LLM post-training, Agentic AI, Python, NLP, and Web Development."
     />
-</head>
+    <meta name="author" content="Rinkal Rahane" />
+    <meta name="keywords" content="Rinkal Rahane, Portfolio, Artificial Intelligence, Machine Learning, LLM, Agentic AI, Sanjivani University, Python, Web Developer, Resume Checker NLP" />
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rinkal Rahane | Portfolio" />
+    <meta property="og:description" content="Computer Science student specializing in AI & ML. Building ideas through code, intelligence, and modern design." />
+    <meta property="og:image" content="photo.jpeg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='sans-serif' font-weight='bold' fill='%23D97746'>R</text></svg>" />
 
-<body>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- NAVBAR -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<nav>
+    <!-- Top Navigation -->
+    <header class="site-header" id="header">
+      <div class="nav-container">
+        <a href="#hero" class="nav-brand" aria-label="Rinkal Rahane Home">
+          <span class="brand-name">Rinkal Rahane</span>
+          <span class="brand-dot" aria-hidden="true"></span>
+        </a>
 
-    <div class="logo">
-        Rinkal Rahane
-    </div>
+        <!-- Desktop Navigation Links -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
 
-    <ul class="nav-links">
+          <!-- Theme Toggle -->
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle theme"
+          >
+            <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </nav>
 
-        <li><a href="#home">Home</a></li>
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+          <button
+            id="mobile-theme-toggle"
+            class="theme-toggle-btn"
+            type="button"
+            aria-label="Toggle dark mode"
+            title="Toggle theme"
+          >
+            <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
 
-        <li><a href="#about">About</a></li>
-
-        <li><a href="#skills">Skills</a></li>
-
-        <li><a href="#projects">Projects</a></li>
-
-        <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <button id="mode-toggle">
-        🌙
-    </button>
-
-</nav>
-
-<!-- HERO SECTION -->
-
-<section id="home">
-
-   
-
-    <div class="hero-content">
-
-        <h3>Hello, I'm</h3>
-
-        <h1>Rinkal Rahane</h1>
-
-        <h2 class="typing"></h2>
-
-        <p>
-            Passionate AIML student and aspiring Full Stack Developer
-            with strong problem-solving skills and interest in Artificial Intelligence.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="assets/resume.pdf" class="btn primary" download>
-                Download Resume
-                
-            </a>
-
-            <a href="#contact" class="btn secondary">
-                Contact Me
-            </a>
-
+          <button
+            id="hamburger-btn"
+            class="hamburger-btn"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
         </div>
+      </div>
 
-        <div class="social-icons">
+      <!-- Mobile Dropdown Navigation -->
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <ul class="mobile-nav-links">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
-            <a href="https://github.com/RinkalRahane">
-                <i class="fab fa-github"></i>
-            </a>
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="status-indicator"></span>
+              <span>B.Tech CSE (AIML) Student &middot; Open to Opportunities</span>
+            </div>
 
-            <a href="https://www.linkedin.com/in/rinkal-rahane-98138a31b">
-                <i class="fab fa-linkedin"></i>
-            </a>
+            <p class="hero-greeting">Hi, I'm Rinkal Rahane.</p>
+            
+            <h1 class="hero-headline">
+              Building ideas through <span class="text-serif">Code &amp; Intelligence.</span>
+            </h1>
 
-        </div>
-
-    </div>
-
-</section>
-
-<!-- STATS -->
-
-<section class="stats">
-
-    <div class="stat-card">
-        <h2>2+</h2>
-        <p>Projects</p>
-    </div>
-
-    <div class="stat-card">
-        <h2>2</h2>
-        <p>Internships</p>
-    </div>
-
-    <div class="stat-card">
-        <h2>8+</h2>
-        <p>Technologies</p>
-    </div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section id="about">
-
-    <h2 class="section-title">
-        About Me
-    </h2>
-
-    <div class="about-container">
-
-        <div class="glass-card">
-
-            <h3>Education</h3>
-
-            <p>
-                B.Tech CSE (AIML) 3rd Year
-                <br>
-                Sanjivani University
+            <p class="hero-description">
+              Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning at Sanjivani University, Kopargaon. Exploring algorithms, LLM workflows, frontend design, and intelligent software to solve meaningful problems.
             </p>
 
+            <div class="hero-actions">
+              <a
+                href="RR_resume.pdf"
+                class="btn btn-primary"
+                download="RR_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Download Resume</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </a>
+
+              <a href="#projects" class="btn btn-secondary">
+                <span>Explore Projects</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+              <span class="socials-label">Connect:</span>
+              <div class="social-links-list">
+                <a
+                  href="https://github.com/RinkalRahane"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="GitHub Profile"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/rinkal-rahane-98138a31b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="LinkedIn Profile"
+                  title="LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image / Natural Photograph -->
+          <div class="hero-visual">
+            <div class="portrait-card">
+              <div class="portrait-image-wrapper">
+                <img
+                  src="photo.jpeg"
+                  alt="Photograph of Rinkal Rahane"
+                  class="portrait-img"
+                  width="400"
+                  height="450"
+                  loading="eager"
+                />
+              </div>
+              <div class="portrait-caption">
+                <span class="caption-name">Rinkal Rahane</span>
+                <span class="caption-title">Sanjivani University</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="glass-card">
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">01 &middot; About</span>
+            <h2 class="section-title">Background &amp; Curiosity</h2>
+          </div>
 
-            <h3>Experience</h3>
+          <div class="about-grid">
+            <div class="about-narrative">
+              <p class="lead-text">
+                I am a dedicated Computer Science student specializing in Artificial Intelligence and Machine Learning at Sanjivani University, Kopargaon.
+              </p>
+              <p>
+                My journey in technology centers on a genuine passion for programming, systematic problem-solving, and building practical applications. I enjoy understanding how algorithms operate under the hood and combining that knowledge with clean, accessible frontend interfaces.
+              </p>
+              <p>
+                Whether exploring data visualization, working with Python for machine learning workflows, or crafting structured web interfaces with HTML, CSS, and JavaScript, I am continuously learning and collaborating on projects that bridge intelligence and utility.
+              </p>
+            </div>
 
-            <p>
-                
-                Ethara - LLM Intern
-                <br>
-                1M1B - Ai & Sustainability Intern 
+            <div class="about-card-group">
+              <div class="editorial-info-card">
+                <div class="card-icon-header">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                  <span class="card-label">Academics</span>
+                </div>
+                <h3 class="card-title">B.Tech in CSE (AIML)</h3>
+                <p class="card-detail">Sanjivani University, Kopargaon</p>
+                <p class="card-subtext">Focusing on Artificial Intelligence, Machine Learning algorithms, Data Structures, and Software Development fundamentals.</p>
+              </div>
+
+              <div class="editorial-info-card">
+                <div class="card-icon-header">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <span class="card-label">Core Interests</span>
+                </div>
+                <h3 class="card-title">Code &amp; AI Integration</h3>
+                <p class="card-detail">LLMs, Python, Frontend Craft &amp; Data Viz</p>
+                <p class="card-subtext">Interested in practical applications of machine learning, natural language processing, LLM evaluation pipelines, and interactive user experiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERNSHIP EXPERIENCE SECTION -->
+      <section id="experience" class="section experience-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">02 &middot; Experience</span>
+            <h2 class="section-title">Internship Experience</h2>
+            <p class="section-subtitle">Hands-on industry and project experience in AI data pipelines, LLM post-training evaluation, Agentic AI, and responsible technology.</p>
+          </div>
+
+          <div class="experience-grid">
+            <!-- Internship 1: Green Rider Technology LLP -->
+            <div class="experience-card">
+              <div class="experience-card-header">
+                <div class="experience-badge-row">
+                  <span class="company-badge">LLM Post-Training</span>
+                  <span class="duration-badge">January 2026 &ndash; April 2026</span>
+                </div>
+                <h3 class="experience-role">LLM Post Training Intern</h3>
+                <div class="company-name-row">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span class="experience-company">Green Rider Technology LLP</span>
+                </div>
+              </div>
+
+              <ul class="experience-bullet-list">
+                <li>Worked on AI and data projects focusing on LLM post-training and evaluation workflows.</li>
+                <li>Gained hands-on experience in AI data pipelines.</li>
+                <li>Collaborated with Quality Leads and incorporated structured feedback.</li>
+                <li>Followed quality guidelines and maintained timely delivery.</li>
+              </ul>
+
+              <div class="tags-group experience-tags">
+                <span class="skill-tag">LLM Post-Training</span>
+                <span class="skill-tag">Evaluation Workflows</span>
+                <span class="skill-tag">AI Data Pipelines</span>
+                <span class="skill-tag">Quality Assurance</span>
+              </div>
+            </div>
+
+            <!-- Internship 2: 1M1B in collaboration with IBM SkillsBuild -->
+            <div class="experience-card">
+              <div class="experience-card-header">
+                <div class="experience-badge-row">
+                  <span class="company-badge">Agentic AI &amp; RAG</span>
+                  <span class="duration-badge">December 2025 &ndash; January 2026</span>
+                </div>
+                <h3 class="experience-role">AI for Sustainability Virtual Intern</h3>
+                <div class="company-name-row">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span class="experience-company">1M1B (One Million for One Billion) in collaboration with IBM SkillsBuild</span>
+                </div>
+              </div>
+
+              <ul class="experience-bullet-list">
+                <li>Gained practical exposure to responsible AI and sustainability-driven problem-solving.</li>
+                <li>Worked with Agentic AI and Retrieval-Augmented Generation (RAG).</li>
+                <li>Explored AI applications related to the United Nations Sustainable Development Goals (UN SDGs).</li>
+                <li>Learned about ethical AI practices and impact-driven technology.</li>
+              </ul>
+
+              <div class="tags-group experience-tags">
+                <span class="skill-tag">Agentic AI</span>
+                <span class="skill-tag">RAG</span>
+                <span class="skill-tag">Responsible AI</span>
+                <span class="skill-tag">UN SDGs</span>
+                <span class="skill-tag">IBM SkillsBuild</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="section skills-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">03 &middot; Competencies</span>
+            <h2 class="section-title">Skills &amp; Toolkit</h2>
+            <p class="section-subtitle">A balanced toolkit encompassing programming languages, web fundamentals, design tools, and collaborative capabilities.</p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Programming -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-index">01</span>
+                <h3 class="category-name">Programming</h3>
+              </div>
+              <p class="category-desc">Core languages used for problem solving, data processing, and application development.</p>
+              <div class="tags-group">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">R</span>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-index">02</span>
+                <h3 class="category-name">Frontend</h3>
+              </div>
+              <p class="category-desc">Building accessible, responsive, and cleanly structured client-side web interfaces.</p>
+              <div class="tags-group">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">Responsive Design</span>
+              </div>
+            </div>
+
+            <!-- Design -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-index">03</span>
+                <h3 class="category-name">Design &amp; Prototyping</h3>
+              </div>
+              <p class="category-desc">Crafting wireframes, UI layouts, visual assets, and user interface concepts.</p>
+              <div class="tags-group">
+                <span class="skill-tag">UI/UX Design</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Canva</span>
+              </div>
+            </div>
+
+            <!-- Other / Interpersonal -->
+            <div class="skill-category-card">
+              <div class="skill-category-header">
+                <span class="category-index">04</span>
+                <h3 class="category-name">Analytics &amp; Teamwork</h3>
+              </div>
+              <p class="category-desc">Analytical evaluation, data exploration, and effective collaborative competencies.</p>
+              <div class="tags-group">
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Teamwork</span>
+                <span class="skill-tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section projects-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">04 &middot; Portfolio</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-subtitle">Real-world applications, exploratory data analyses, and machine learning implementations built with clean code.</p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Expense Tracker -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="assets/project-expense.jpg"
+                  alt="Expense Tracker application interface preview"
+                  class="project-img"
+                  width="600"
+                  height="340"
+                  loading="lazy"
+                />
+                <div class="project-overlay-badge">Web Application</div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type">Frontend &middot; Utility</span>
+                </div>
+                <h3 class="project-title">Expense Tracker</h3>
+                <p class="project-desc">
+                  A personal financial management tool built to record daily income and expenditures, track budget categories, and maintain persistent state using browser storage.
+                </p>
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-pill">HTML</span>
+                  <span class="tech-pill">CSS</span>
+                  <span class="tech-pill">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/RinkalRahane/Expense-Tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="View Expense Tracker on GitHub"
+                  >
+                    <span>View Repository</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Matplotlib Library -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="assets/project-matplotlib.jpg"
+                  alt="Matplotlib data visualization charts preview"
+                  class="project-img"
+                  width="600"
+                  height="340"
+                  loading="lazy"
+                />
+                <div class="project-overlay-badge">Data Science</div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type">Python &middot; Data Visualization</span>
+                </div>
+                <h3 class="project-title">Matplotlib Data Visualization</h3>
+                <p class="project-desc">
+                  An exploratory project analyzing datasets and implementing visual charts, custom plots, statistical distributions, and figures using Python's Matplotlib library.
+                </p>
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Matplotlib</span>
+                  <span class="tech-pill">Jupyter Notebook</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/RinkalRahane/Matplotlib.ipynb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="View Matplotlib Library Notebook on GitHub"
+                  >
+                    <span>View Repository</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Resume Checker using NLP -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="assets/project-resume.jpg"
+                  alt="Resume Checker NLP application interface preview"
+                  class="project-img"
+                  width="600"
+                  height="340"
+                  loading="lazy"
+                />
+                <div class="project-overlay-badge">Machine Learning</div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type">NLP &middot; AI</span>
+                </div>
+                <h3 class="project-title">Resume Checker using NLP</h3>
+                <p class="project-desc">
+                  An intelligent text evaluation tool using Natural Language Processing techniques to analyze resumes, compare content with job requirements, and generate alignment insights.
+                </p>
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">NLP</span>
+                  <span class="tech-pill">Machine Learning</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/RinkalRahane/Resume_Checker.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="View Resume Checker on GitHub"
+                  >
+                    <span>View Repository</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Personal Portfolio -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="assets/project-portfolio.jpg"
+                  alt="Personal portfolio website preview"
+                  class="project-img"
+                  width="600"
+                  height="340"
+                  loading="lazy"
+                />
+                <div class="project-overlay-badge">Web Design</div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="project-type">Frontend &middot; Editorial Design</span>
+                </div>
+                <h3 class="project-title">Personal Portfolio</h3>
+                <p class="project-desc">
+                  A bespoke, responsive personal portfolio website engineered with clean semantic HTML5, modern vanilla CSS, responsive layouts, and accessible interaction patterns.
+                </p>
+                <div class="project-tech-stack" aria-label="Technologies used">
+                  <span class="tech-pill">HTML5</span>
+                  <span class="tech-pill">CSS3</span>
+                  <span class="tech-pill">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/RinkalRahane"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="View Personal Portfolio Repository on GitHub"
+                  >
+                    <span>View GitHub Profile</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="section education-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">05 &middot; Education</span>
+            <h2 class="section-title">Academic Background</h2>
+          </div>
+
+          <div class="education-card">
+            <div class="education-timeline-dot" aria-hidden="true"></div>
+            <div class="education-content">
+              <div class="education-meta">
+                <span class="education-status-tag">Currently Pursuing</span>
+                <span class="education-spec">Undergraduate Program</span>
+              </div>
+              <h3 class="education-degree">
+                Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering
+              </h3>
+              <p class="education-specialization">
+                Specialization in Artificial Intelligence and Machine Learning (AI &amp; ML)
+              </p>
+              <div class="education-institute">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Sanjivani University, Kopargaon</span>
+              </div>
+              <p class="education-summary">
+                Rigorous coursework combining computer science principles, discrete mathematics, object-oriented programming, data structures, machine learning foundations, and modern web software engineering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-tag">06 &middot; Contact</span>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">
+              Interested in collaborating, offering an internship opportunity, or discussing technology? Reach out via email or connect with me on social platforms.
             </p>
+          </div>
 
+          <div class="contact-card">
+            <div class="contact-options-grid">
+              <!-- Email Card -->
+              <div class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:rinkalrahane88@gmail.com" class="method-value">
+                    rinkalrahane88@gmail.com
+                  </a>
+                </div>
+                <a
+                  href="mailto:rinkalrahane88@gmail.com"
+                  class="btn btn-outline btn-sm"
+                  aria-label="Send email to rinkalrahane88@gmail.com"
+                >
+                  <span>Send Email</span>
+                </a>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                  </svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Professional Network</span>
+                  <a
+                    href="https://www.linkedin.com/in/rinkal-rahane-98138a31b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="method-value"
+                  >
+                    linkedin.com/in/rinkal-rahane
+                  </a>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/rinkal-rahane-98138a31b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                  aria-label="Connect on LinkedIn"
+                >
+                  <span>Connect</span>
+                </a>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Source Code</span>
+                  <a
+                    href="https://github.com/RinkalRahane"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="method-value"
+                  >
+                    github.com/RinkalRahane
+                  </a>
+                </div>
+                <a
+                  href="https://github.com/RinkalRahane"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm"
+                  aria-label="Follow on GitHub"
+                >
+                  <span>Explore</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-name">Rinkal Rahane</span>
+            <p class="footer-role">B.Tech Student &middot; AI &amp; ML Specialization &middot; Sanjivani University</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <ul class="footer-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
 
-    </div>
-
-    <p class="about-text">
-
-        Motivated AIML student with a passion for web development,
-        machine learning and problem solving. Skilled in Python,
-        HTML, CSS, JavaScript and Data Visualization.
-
-    </p>
-
-</section>
-
-<!-- SKILLS -->
-
-<section id="skills">
-
-    <h2 class="section-title">
-        Skills
-    </h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <div class="progress"><span style="width:95%"></span></div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; <span id="current-year">2026</span> Rinkal Rahane. All rights reserved.
+          </p>
+          <a href="#hero" class="back-to-top" aria-label="Back to top">
+            <span>Back to top</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
         </div>
+      </div>
+    </footer>
 
-        <div class="skill-card">
-            <h3>CSS</h3>
-            <div class="progress"><span style="width:90%"></span></div>
-        </div>
-
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <div class="progress"><span style="width:75%"></span></div>
-        </div>
-
-        <div class="skill-card">
-            <h3>Python</h3>
-            <div class="progress"><span style="width:90%"></span></div>
-        </div>
-
-        <div class="skill-card">
-            <h3>Java</h3>
-            <div class="progress"><span style="width:70%"></span></div>
-        </div>
-
-        <div class="skill-card">
-            <h3>Figma</h3>
-            <div class="progress"><span style="width:80%"></span></div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- PROJECTS -->
-
-<section id="projects">
-
-    <h2 class="section-title">
-        Projects
-    </h2>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-
-            <img src="assets/project1.jpg">
-
-            <h3>Expense Tracker</h3>
-
-            <p>
-                Personal finance management application.
-            </p>
-
-            <a href="https://github.com/RinkalRahane/Expense-Tracker">
-                View Project
-            </a>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="assets/project2.jpg">
-
-            <h3>Resume Matcher</h3>
-
-            <p>
-                NLP based Resume and Job Description matching system.
-            </p>
-
-            <a href="https://github.com/RinkalRahane">
-                View Project
-            </a>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="assets/project3.jpg">
-
-            <h3>Portfolio Website</h3>
-
-            <p>
-                Modern responsive developer portfolio.
-            </p>
-
-            <a href="#">
-                View Project
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-    <h2 class="section-title">
-        Contact Me
-    </h2>
-
-    <div class="contact-card">
-
-        <p>
-            <i class="fas fa-envelope"></i>
-            rinkalrahane88@gmail.com
-        </p>
-
-        <p>
-            <i class="fas fa-phone"></i>
-            8856914258
-        </p>
-
-        <p>
-            <a href="https://www.linkedin.com/in/rinkal-rahane-98138a31b">
-            <i class="fab fa-linkedin"></i>
-            LinkedIn</a>
-        </p>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <p>
-        © 2026 Rinkal Rahane | AI & ML Developer
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
